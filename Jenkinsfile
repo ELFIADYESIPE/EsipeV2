@@ -3,7 +3,7 @@ node{
   git 'https://github.com/ELFIADYESIPE/EsipeV2'
   }
   stage('Compile-Package'){
-    mvn verify
+    bat 'mvn verify'
   //def mvnHome = tool name: 'apache-maven-binary-3.5.4', type: 'maven'
   //sh "$(mvnHome)/bin/mvn package"
   }
